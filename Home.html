@@ -22,9 +22,10 @@
                           <div class="stat-desc"> Available Balance</div>
                         </div>
                     </div>
-                    <div class="space-x-4 space-y-4">
+                    <div class="space-x-1 space-y-2 ml-8 ">
                         <button id="add-money-btn" class="btn">Add Money</button>
                         <button id="cash-out-btn" class="btn">Cash Out</button>
+                        <button id="transactions-btn" class="btn">Transactions</button>
                     </div>
 
 
@@ -52,7 +53,7 @@
                       <!-- cash out form start -->
 
                        <!-- add money form start -->
-                    <form id="cash-out" class="card-body hidden">
+                    <form id="cash-out" class="card-body hidden ">
                         <div class="form-control">
                           <label class="label">
                             <span class="label-text">Cash Out</span>
@@ -70,11 +71,20 @@
                         </div>
                       </form>
 
+                      <section id="transactions-form" class="hidden">
+                        <h1 class="font-bold text-2xl"> history transactions</h1>
+                        <div id="transaction-section">
+                        </div>
+                      </section>
+
+
                   </div>
                 </div>
               </div>
         </section>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>
