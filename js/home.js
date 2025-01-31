@@ -1,17 +1,15 @@
-const addMoneyBtn = document.getElementById('add-money-btn').addEventListener('click', function(){
-  const add =   document.getElementById('add');
-    add.classList.remove('hidden')
-    const cashOut =   document.getElementById('cash-out');
-  cashOut.classList.add('hidden')
-})
+// Taggle button add money and cash Out --------
+
+document.getElementById('add-money-btn').addEventListener('click', function(){
+    document.getElementById('add').classList.remove('hidden');
+    document.getElementById('cash-out').classList.add('hidden')
+});
 document.getElementById('cash-out-btn').addEventListener('click', function(){
-  const cashOut =   document.getElementById('cash-out');
-  cashOut.classList.remove('hidden')
-
-    const add =   document.getElementById('add');
-    add.classList.add('hidden')
+    document.getElementById('cash-out').classList.remove('hidden');
+    document.getElementById('add').classList.add('hidden');
 })
 
+// --------------------------------------
 
 document.getElementById('add-money-payoo-btn').addEventListener('click',function(event){
     event.preventDefault();
