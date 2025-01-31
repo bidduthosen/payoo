@@ -18,36 +18,63 @@
                     <!-- Available Balance  -->
                     <div class="stats shadow mt-7">
                         <div class="stat">
-                          <div class="stat-value">4500</div>
+                          <div id="available-balace" class="stat-value">4500</div>
                           <div class="stat-desc"> Available Balance</div>
                         </div>
                     </div>
                     <div class="space-x-4 space-y-4">
-                        <button class="btn">Add Mony</button>
-                        <button class="btn">Cash Out</button>
+                        <button id="add-money-btn" class="btn">Add Money</button>
+                        <button id="cash-out-btn" class="btn">Cash Out</button>
                     </div>
-                    <!-- form start -->
-                    <form class="card-body ">
+
+
+                    <!-- add money form start -->
+                    <form id="add" class="card-body">
                         <div class="form-control">
                           <label class="label">
-                            <span class="label-text">Number</span>
+                            <span class="label-text">Add Money</span>
                           </label>
-                          <input id="number-input-field" type="text" placeholder="Your Number" class="input input-bordered" required />
+                          <input id="add-money-field" type="text" placeholder="Your Money" class="input input-bordered" required />
                         </div>
                         <div class="form-control">
                           <label class="label">
                             <span class="label-text">Pin</span>
                           </label>
-                          <input id="pin-input-field" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                          <input id="add-money-pin-field" type="password" placeholder="Your Pin" class="input input-bordered" required />
                         </div>
                         <div class="form-control mt-6">
-                          <button id="login-payoo-btn" class="btn btn-primary">Login</button>
+                          <button id="add-money-payoo-btn" class="btn btn-primary">Add Money</button>
                         </div>
                       </form>
+
+
+
+                      <!-- cash out form start -->
+
+                       <!-- add money form start -->
+                    <form id="cash-out" class="card-body hidden">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Cash Out</span>
+                          </label>
+                          <input id="cash-out-field" type="text" placeholder="Your Money" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Pin</span>
+                          </label>
+                          <input id="cash-out-pin-field" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                          <button id="cash-out-payoo-btn" class="btn btn-primary">Cash-Out</button>
+                        </div>
+                      </form>
+
                   </div>
                 </div>
               </div>
         </section>
     </main>
+    <script src="js/home.js"></script>
 </body>
 </html>
